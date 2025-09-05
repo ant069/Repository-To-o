@@ -45,3 +45,45 @@ div:nth-of-type(3) {
   top: 440px;
   left: 440px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1b2a;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.yellow {
+  background-color: #FCD116;
+  top: 0;
+  left: 0;
+}
+
+.blue {
+  background-color: #002B7F;
+  top: 220px;
+  left: 220px;
+}
+
+.red {
+  background-color: #CE1126;
+  top: 440px;
+  left: 440px;
+}
