@@ -1,3 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 body {
+  background-color: #0d1b2a;
+  color: #f0f0f0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  text-align: center;
   margin: 0;
+  padding: 0;
 }
+
+.section-div {
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px 0;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  background: #1e2a38;
+}
+
+.section-div:nth-child(even) {
+  background: #14213d;
+}
+
+.section-div:nth-child(odd) {
+  background: #1e2a38;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  color: #ffcc00;
+  font-size: 5.5rem;
+  margin: 50px 0 0 0;
+  border-bottom: 1px solid #ffcc00;
+  padding-bottom: 5px;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffcc00;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  border-bottom: 1px solid #ffcc00;
+  padding-bottom: 5px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffcc00;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  border-bottom: 1px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+table img,
+.profile-img {
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: transparent;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #14213d;
+  color: #ffcc00;
+}
+
+td img {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.education-section {
+  background-color: #1e2a38;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.education-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.education-section li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.education-section img {
+  margin-right: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.destination-img,
+section img {
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul img {
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+ul > li > img,
+.favorites-list img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+em {
+  font-style: italic;
+  color: #00bcd4;
+}
+
+nav {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #14213d;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav li {
+  margin-bottom: 8px;
+}
+
+nav a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd633;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+td:has(> .free) {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+td:has(> .busy) {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.free::before {
+  content: "🟢 ";
+}
+
+.busy::before {
+  content: "🔴 ";
+}
+
+form {
+  background-color: #1e2a38;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="color"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0d1b2a;
+  color: #f0f0f0;
+}
+
+form input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #ffcc00;
+  color: #0d1b2a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ffd633;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffcc00;
+  margin:
