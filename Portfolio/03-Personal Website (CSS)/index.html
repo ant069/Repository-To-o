@@ -1,12 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website - CSS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonio Enriquez Velasco</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    .profile-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 30px; }
+    .profile-table { margin: 0 auto; width: 60%; border: none; }
+    .profile-table td { vertical-align: middle; border: none; padding: 0; }
+    .favorites-list { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px; }
+    .favorite-item { background: #eaf6f6; border-radius: 20px; padding: 20px; width: 220px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center; color: #222; }
+    .favorite-item img { width: 80px; height: 80px; margin-bottom: 10px; object-fit: cover; border-radius: 50%; }
+    .education-list img { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; margin-bottom: 5px; }
+    .team-container { margin-top: 20px; }
+    .team-member img { margin-bottom: 10px; }
+    ul, ol { text-align: left; display: inline-block; margin: 0 auto 10px auto; padding-left: 20px; }
+    .section-div { padding-top: 20px; padding-bottom: 20px; }
+    .section-div h2, .section-div h3 { margin-bottom: 10px; }
+    .section-div p { margin-bottom: 10px; }
+  </style>
 </head>
 <body>
-  
+  <div class="cloud"></div>
+  <div class="cloud2"></div>
+  <div class="mountain"></div>
+
+  <div class="section-div">
+    <!-- Profile Section -->
+    <div style="display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap;">
+      <img src="images/My self.jpg" alt="Antonio Enriquez" class="profile-img" style="width:160px; height:160px; border:4px solid #ffcc00; box-shadow:0 4px 16px rgba(0,0,0,0.15); margin-bottom:0;" />
+      <div style="text-align: left;">
+        <h1 style="font-size: 5.5rem; margin-bottom: 10px; white-space: nowrap; color: #ffcc00; text-shadow: 2px 2px 8px #14213d;">Antonio Enríquez Velasco</h1>
+        <hr style="border: none; border-top: 1px solid #ffcc00; width: 60%; margin: 20px 0;">
+        <div style="font-size: 1.2rem;">Student</div>
+        <div style="font-size: 1.2rem;">Not working at the moment</div>
+        <p style="margin-top: 30px; font-size: 1.15rem;">
+          I'm a student at Universidad Panamericana, third semester of computer science. I enjoy movies, video games, and learning new things.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-div">
+    <!-- Quote -->
+    <h2>Favorite Quote</h2>
+    <p><em>"Why do we fall? So we can learn to pick ourselves up." – Thomas Wayne</em></p>
+    <img src="images/batman.jpg" alt="Batman" style="width:120px; height:120px; object-fit:cover; border-radius:50%; margin-top:10px;" />
+  </div>
+
+  <div class="section-div">
+    <!-- Background -->
+    <h2>Background</h2>
+    <p>
+      I grew up with a strong interest in technology and computers. Math and calculus have always come easy to me. My goal is to work for a large company and give my parents a good life, just as they did for me.
+    </p>
+  </div>
+
+  <div class="section-div education-section">
+    <!-- Education -->
+    <h3>Education</h3>
+    <ul class="education-list">
+      <li>
+        <a href="https://www.colegiocervantes.edu.mx/" target="_blank">
+          <img src="images/primaria.png" alt="Cervantes Primaria" />
+        </a>
+        <em>2012–2018</em>: <strong>Colegio Cervantes Primaria</strong>
+      </li>
+      <li>
+        <a href="https://www.colegiocervantes.edu.mx/" target="_blank">
+          <img src="images/secundaria.png" alt="Cervantes Bosque" />
+        </a>
+        <em>2018–2019</em>: <strong>Secundaria Cervantes Bosque</strong>
+      </li>
+      <li>
+        <a href="https://www.colegiocab.edu.mx/" target="_blank">
+          <img src="images/secundaria2.png" alt="CAB" />
+        </a>
+        <em>2019–2021</em>: <strong>Secundaria CAB</strong>
+      </li>
+      <li>
+        <a href="https://www.colegiocervantes.edu.mx/" target="_blank">
+          <img src="images/prepa.jpeg" alt="Cervantes Loma Bonita" />
+        </a>
+        <em>2021–2024</em>: <strong>Preparatoria Cervantes Loma Bonita</strong>
+      </li>
+      <li>
+        <a href="https://www.up.edu.mx/" target="_blank">
+          <img src="images/universidad.jpeg" alt="Universidad Panamericana" />
+        </a>
+        <em>2024–present</em>: <strong>Universidad Panamericana</strong>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section-div">
+    <!-- Skills -->
+    <h3>Skills</h3>
+    <ol>
+      <li>Math – 85%</li>
+      <li>Typing Speed & Accuracy – 80%</li>
+      <li>Networking – 45%</li>
+      <li>Hardware Repair – 50%</li>
+      <li>Social Media Management – 50%</li>
+    </ol>
+  </div>
+
+  <div class="section-div">
+    <!-- Hobbies -->
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Watching movies</li>
+      <li>Playing video games</li>
+      <li>Exploring new foods</li>
+      <li>Reading about technology</li>
+      <li>Coding challenges</li>
+    </ul>
+  </div>
+
+  <div class="section-div">
+    <!-- Favorite Food -->
+    <h3>Favorite Food</h3>
+    <div style="display:flex; justify-content:center; gap:40px;">
+      <div>
+        <strong style="display:block; margin-bottom:8px;">Top 5 Cuisines:</strong>
+        <ul>
+          <li>Mexican</li>
+          <li>Italian</li>
+          <li>Japanese</li>
+          <li>Korean</li>
+          <li>Arab</li>
+        </ul>
+      </div>
+      <div>
+        <strong style="display:block; margin-bottom:8px;">Bottom 3:</strong>
+        <ul>
+          <li>Thai</li>
+          <li>Russian</li>
+          <li>Australian</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-div">
+    <!-- Favorites -->
+    <h2>Favorites</h2>
+    <div class="favorites-list">
+      <div class="favorite-item">
+        <img src="images/Percy Jackson.jpg" alt="Books" />
+        <strong style="display:block; margin-bottom:8px;">Books</strong>
+        <ul>
+          <li>Percy Jackson</li>
+          <li>Harry Potter</li>
+          <li>Hunger Games</li>
+        </ul>
+      </div>
+      <div class="favorite-item">
+        <img src="images/Prisioners.jpg" alt="Movies" />
+        <strong style="display:block; margin-bottom:8px;">Movies</strong>
+        <ul>
+          <li>Prisioners</li>
+          <li>Oppenheimer</li>
+          <li>Spider-Man: Across the Spider-Verse</li>
+        </ul>
+      </div>
+      <div class="favorite-item">
+        <img src="images/AOT.jpg" alt="TV Shows" />
+        <strong style="display:block; margin-bottom:8px;">TV Shows</strong>
+        <ul>
+          <li>Attack on Titan</li>
+          <li>Breaking Bad</li>
+          <li>Better Call Saul</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-div">
+    <!-- Navigation -->
+    <nav>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="destination.html">My Favorite Spots</a></li>
+        <li><a href="destination.html#shibuya">Go to Shibuya, Japan</a></li>
+        <li><a href="destination.html#tokyo">Go to Tokyo, Japan</a></li>
+        <li><a href="destination.html#switzeralps">Go to Switzer Alps, Switzerland</a></li>
+        <li><a href="destination.html#niagara">Go to Niagara Falls, Canada</a></li>
+        <li><a href="destination.html#cenotes">Go to Cenotes, Mérida</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="section-div">
+    <!-- Role Models -->
+    <h2>Role Models</h2>
+    <div class="team-container" style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap;">
+      <div class="team-member" style="background:#14213d; border-radius:16px; padding:24px; width:240px; text-align:center; color:#f0f0f0; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+        <img src="images/kendrick.jpg" alt="Kendrick Lamar" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:12px; border:3px solid #ffcc00;" />
+        <h3 style="margin-bottom:8px; color:#ffcc00;">Kendrick Lamar</h3>
+        <div style="margin-bottom:6px;">Rapper, Songwriter</div>
+        <div style="margin-bottom:6px; font-size:0.95em;">Born: June 17, 1987</div>
+        <div style="font-size:0.95em;">Achievements: Pulitzer Prize, “To Pimp a Butterfly”, “DAMN.”, “Not Like Us”</div>
+      </div>
+      <div class="team-member" style="background:#14213d; border-radius:16px; padding:24px; width:240px; text-align:center; color:#f0f0f0; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+        <img src="images/travis.jpg" alt="Travis Scott" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:12px; border:3px solid #ffcc00;" />
+        <h3 style="margin-bottom:8px; color:#ffcc00;">Travis Scott</h3>
+        <div style="margin-bottom:6px;">Rapper, Producer</div>
+        <div style="margin-bottom:6px; font-size:0.95em;">Born: April 30, 1991</div>
+        <div style="font-size:0.95em;">Achievements: “Astroworld”, “Sicko Mode”, Grammy nominee</div>
+      </div>
+      <div class="team-member" style="background:#14213d; border-radius:16px; padding:24px; width:240px; text-align:center; color:#f0f0f0; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+        <img src="images/socrates.jpg" alt="Socrates" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:12px; border:3px solid #ffcc00;" />
+        <h3 style="margin-bottom:8px; color:#ffcc00;">Socrates</h3>
+        <div style="margin-bottom:6px;">Philosopher</div>
+        <div style="margin-bottom:6px; font-size:0.95em;">Born: c. 470 BCE – 399 BCE</div>
+        <div style="font-size:0.95em;">Achievements: Socratic Method, ethics, mentor to Plato</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-div">
+    <!-- Weekly Schedule -->
+    <h2>Weekly Schedule</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Date</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Description</th>
+        <th>Place</th>
+        <th>Type</th>
+        <th>Notes</th>
+        <th>Status</th>
+      </tr>
+      <tr><td>Monday</td><td>09:00</td><td>11:00</td><td>Gym</td><td>Fitness Center</td><td>Exercise</td><td>Strength training</td><td>🔴 Busy</td></tr>
+      <tr><td>Monday</td><td>11:30</td><td>13:00</td><td>Ethics Class</td><td>University</td><td>Study</td><td>Moral philosophy</td><td>🔴 Busy</td></tr>
+      <tr><td>Monday</td><td>13:00</td><td>Rest of day</td><td>Home</td><td>Leisure</td><td>Relax and recharge</td><td>🟢 Free</td></tr>
+      <tr><td>Tuesday</td><td>07:00</td><td>08:50</td><td>Gym</td><td>Fitness Center</td><td>Exercise</td><td>Cardio and mobility</td><td>🔴 Busy</td></tr>
+      <tr><td>Tuesday</td><td>09:00</td><td>11:00</td><td>Web App Development</td><td>University</td><td>Study</td><td>HTML, CSS, JavaScript</td><td>🔴 Busy</td></tr>
+      <tr><td>Tuesday</td><td>11:00</td><td>13:00</td><td>Data Structures</td><td>University</td><td>Study</td><td>Linked lists, trees, graphs</td><td>🔴 Busy</td></tr>
+      <tr><td>Tuesday</td><td>13:00</td><td>15:00</td><td>Integral Calculus</td><td>University</td><td>Study</td><td>Definite and indefinite integrals</td><td>🔴 Busy</td></tr>
+      <tr><td>Tuesday</td><td>15:00</td><td>19:00</td><td>Break</td><td>Home</td><td>Leisure</td><td>Rest, food, gaming</td><td>🟢 Free</td></tr>
+      <tr><td>Tuesday</td><td>19:00</td><td>21:00</td><td>Project Management</td><td>University</td><td>Study</td><td>Agile, Scrum, planning</td><td>🔴 Busy</td></tr>
+      <tr><td>Wednesday</td><td>09:00</td><td>11:00</td><td>Gym</td><td>Fitness Center</td><td>Exercise</td><td>Strength training</td><td>🔴 Busy</td></tr>
+      <tr><td>Wednesday</td><td>11:30</td><td>13:00</td><td>Ethics Class</td><td>University</td><td>Study</td><td>Moral philosophy</td><td>🔴 Busy</td></tr>
+      <tr><td>Wednesday</td><td>13:00</td><td>Rest of day</td><td>Home</td><td>Leisure</td><td>Relax and recharge</td><td>🟢 Free</td></tr>
+      <tr><td>Thursday</td><td>07:00</td><td>08:50</td><td>Gym</td><td>Fitness Center</td><td>Exercise</td><td>Cardio and mobility</td><td>🔴 Busy</td></tr>
+      <tr><td>Thursday</td><td>09:00</td><td>11:00</td><td>Web App Development</td><td>University</td><td>Study</td><td>HTML, CSS, JavaScript</td><td>🔴 Busy</td></tr>
+      <tr><td>Thursday</td><td>11:00</td><td>13:00</td><td>Data Structures</td><td>University</td><td>Study</td><td>Linked lists, trees, graphs</td><td>🔴 Busy</td></tr>
+      <tr><td>Thursday</td><td>13:00</td><td>15:00</td><td>Integral Calculus</td><td>University</td><td>Study</td><td>Definite and indefinite integrals</td><td>🔴 Busy</td></tr>
+      <tr><td>Thursday</td><td>15:00</td><td>Rest of day</td><td>Home</td><td>Leisure</td><td>Rest, food, gaming</td><td>🟢 Free</td></tr>
+      <tr><td>Friday</td><td>09:00</td><td>11:00</td><td>Gym</td><td>Fitness Center</td><td>Exercise</td><td>Strength training</td><td>🔴 Busy</td></tr>
+      <tr><td>Friday</td><td>11:00</td><td>Rest of day</td><td>Home</td><td>Leisure</td><td>No classes</td><td>🟢 Free</td></tr>
+    </table>
+  </div>
+
+  <div class="section-div">
+    <!-- Weekly Schedule Form -->
+    <h2>Register Your Weekly Activity</h2>
+    <form action="#" method="post">
+      <hr>
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date"><br><br>
+      <label for="start">Start Time:</label><br>
+      <input type="time" id="start" name="start"><br><br>
+      <label for="end">End Time:</label><br>
+      <input type="time" id="end" name="end"><br><br>
+      <hr>
+      <label for="activity">Activity:</label><br>
+      <input type="text" id="activity" name="activity" placeholder="e.g. Gym, Class, Meeting"><br><br>
+      <label for="place">Place:</label><br>
+      <input type="text" id="place" name="place" placeholder="e.g. Home, University"><br><br>
+      <hr>
+      <label for="type">Type:</label><br>
+      <select id="type" name="type">
+        <option value="school">School</option>
+        <option value="personal">Personal</option>
+        <option value="professional">Professional</option>
+        <option value="familiar">Familiar</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      <hr>
+      <label for="notes">Notes:</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Add any extra details..."></textarea><br><br>
+      <label for="flag">Flag Color:</label><br>
+      <input type="color" id="flag" name="flag"><br><br>
+      <label for="status">Busy?</label>
+      <input type="checkbox" id="status" name="status"><br><br>
+      <hr>
+      <input type="submit" value="Register Activity">
+    </form>
+  </div>
 </body>
 </html>
