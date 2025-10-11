@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Exercise - Clock</title>
-    <script type="text/javascript" src="js/clock.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body onload="drawClock()">
     <h1>Clock</h1>
     <hr />
-    <canvas id="canvas" width="400" height="400" style="background-color:#333"></canvas>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="clock.js"></script>
     <script type="text/javascript">
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
@@ -22,5 +21,4 @@
         setInterval(drawClock, 1000);
     </script>
 </body>
-
 </html>
