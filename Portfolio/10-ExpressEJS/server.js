@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 
+<<<<<<< HEAD
 // Configuración para contenido estático
 app.use(express.static("public"));
 
@@ -12,6 +13,17 @@ app.set("view engine", "ejs");
 app.use(express.json());
 
 // Configuración para manejar formularios
+=======
+
+app.use(express.static("public"));
+
+
+app.set("view engine", "ejs");
+
+
+app.use(express.json());
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const longContent =
@@ -25,24 +37,38 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/html/index.html");
 });
 
+<<<<<<< HEAD
 // Login GET (versión no segura)
+=======
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.get("/login", (req, res) => {
   name = req.query.name;
   res.send(`Hello ${name}! This message arrived via GET (unsecured)`);
 });
 
+<<<<<<< HEAD
 // Login POST (versión segura)
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.post("/login", (req, res) => {
   name = req.body.name;
   res.send(`Hello ${name}! This message arrived via POST (secured)`);
 });
 
+<<<<<<< HEAD
 // Ruta de prueba con template
+=======
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.get("/test", (req, res) => {
   res.render("test", { userName: name });
 });
 
+<<<<<<< HEAD
 // Ruta home - muestra todos los posts
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.get("/home", (req, res) => {
   if (!name) {
     res.redirect("/");
@@ -51,7 +77,11 @@ app.get("/home", (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // Crear nuevo post
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.post("/post", (req, res) => {
   const post = {
     id: Date.now(),
@@ -62,7 +92,11 @@ app.post("/post", (req, res) => {
   res.redirect("/home");
 });
 
+<<<<<<< HEAD
 // Ver post específico
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.get("/post/:id", (req, res) => {
   const post = posts.find(p => p.id == req.params.id);
   if (post) {
@@ -72,7 +106,11 @@ app.get("/post/:id", (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // Editar post
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.post("/post/:id/edit", (req, res) => {
   const post = posts.find(p => p.id == req.params.id);
   if (post) {
@@ -82,7 +120,11 @@ app.post("/post/:id/edit", (req, res) => {
   res.redirect("/home");
 });
 
+<<<<<<< HEAD
 // Eliminar post
+=======
+
+>>>>>>> 616d26e8962ef733a30422f764615970028fb345
 app.post("/post/:id/delete", (req, res) => {
   posts = posts.filter(p => p.id != req.params.id);
   res.redirect("/home");
